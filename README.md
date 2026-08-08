@@ -93,7 +93,7 @@ The Power BI dashboard provides an interactive view of hotel booking data and he
 </p>
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/cc47cdeb-fcc9-45b4-a6f0-f06c544d28ae" alt="Dashboard chart 1" style="max-width:100%; width:50%; height:auto; margin: 5px;" />
+  <img src="https://github.com/user-attachments/assets/cc47cdeb-fcc9-45b4-a6f0-f06c544d28ae" alt="Dashboard chart 1" style="max-width:100%; width:44%; height:auto; margin: 5px;" />
   <img src="https://github.com/user-attachments/assets/156ae6f5-17b6-4cf2-aed9-e84a01ac66bf" alt="Dashboard chart 3" style="max-width:100%; width:48%; height:auto; margin: 5px;" />
 </p>
 
