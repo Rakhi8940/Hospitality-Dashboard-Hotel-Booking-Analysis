@@ -1,4 +1,4 @@
-<img width="1217" height="612" alt="img" src="https://github.com/user-attachments/assets/bb3d8e3c-4e34-4690-a53a-bf148d650cf0" />
+<img width="1017" height="512" alt="img" src="https://github.com/user-attachments/assets/bb3d8e3c-4e34-4690-a53a-bf148d650cf0" />
 
 # 🏨 Hospitality Dashboard - Hotel Booking Data Analysis
 
