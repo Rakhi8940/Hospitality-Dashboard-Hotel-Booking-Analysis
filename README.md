@@ -1,4 +1,6 @@
-<img width="1017" height="512" alt="img" src="https://github.com/user-attachments/assets/bb3d8e3c-4e34-4690-a53a-bf148d650cf0" />
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/bb3d8e3c-4e34-4690-a53a-bf148d650cf0" alt="Project overview" style="max-width:100%; width:900px; height:auto;" />
+</p>
 
 # 🏨 Hospitality Dashboard - Hotel Booking Data Analysis
 
@@ -86,19 +88,27 @@ Hospitality Dashboard is a data analytics and visualization project focused on a
 
 The Power BI dashboard provides an interactive view of hotel booking data and helps stakeholders understand revenue performance and trends.
 
-<img width="771" height="171" alt="image" src="https://github.com/user-attachments/assets/af9c196e-551c-42d8-b300-b9ae3bb453ac" />
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/af9c196e-551c-42d8-b300-b9ae3bb453ac" alt="Dashboard - overview" style="max-width:100%; width:800px; height:auto;" />
+</p>
 
-<img width="518" height="291" alt="image" src="https://github.com/user-attachments/assets/cc47cdeb-fcc9-45b4-a6f0-f06c544d28ae" />
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/cc47cdeb-fcc9-45b4-a6f0-f06c544d28ae" alt="Dashboard chart 1" style="max-width:100%; width:48%; height:auto; margin: 5px;" />
+  <img src="https://github.com/user-attachments/assets/04329e08-6dd4-4ae5-bf31-d9c01f4939b9" alt="Dashboard chart 2" style="max-width:100%; width:48%; height:auto; margin: 5px;" />
+</p>
 
-<img width="422" height="282" alt="image" src="https://github.com/user-attachments/assets/04329e08-6dd4-4ae5-bf31-d9c01f4939b9" />
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/156ae6f5-17b6-4cf2-aed9-e84a01ac66bf" alt="Dashboard chart 3" style="max-width:100%; width:48%; height:auto; margin: 5px;" />
+  <img src="https://github.com/user-attachments/assets/5b946ebd-38cc-4322-93f8-331a5a59cbe7" alt="Dashboard chart 4" style="max-width:100%; width:48%; height:auto; margin: 5px;" />
+</p>
 
-<img width="487" height="297" alt="image" src="https://github.com/user-attachments/assets/156ae6f5-17b6-4cf2-aed9-e84a01ac66bf" />
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/983966f7-e3ab-42a0-a357-85da50717d39" alt="Dashboard KPI" style="max-width:100%; width:280px; height:auto; margin: 5px;" />
+</p>
 
-<img width="416" height="283" alt="image" src="https://github.com/user-attachments/assets/5b946ebd-38cc-4322-93f8-331a5a59cbe7" />
-
-<img width="279" height="258" alt="image" src="https://github.com/user-attachments/assets/983966f7-e3ab-42a0-a357-85da50717d39" />
-
-<img width="1375" height="775" alt="image" src="https://github.com/user-attachments/assets/d88710a8-5a08-4540-84e1-efe8efe0bb20" />
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/d88710a8-5a08-4540-84e1-efe8efe0bb20" alt="Full dashboard" style="max-width:100%; width:900px; height:auto;" />
+</p>
 
 ## 🧠 Knowledge Gained From This Project
 
