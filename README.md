@@ -86,6 +86,20 @@ Hospitality Dashboard is a data analytics and visualization project focused on a
 
 The Power BI dashboard provides an interactive view of hotel booking data and helps stakeholders understand revenue performance and trends.
 
+<img width="771" height="171" alt="image" src="https://github.com/user-attachments/assets/af9c196e-551c-42d8-b300-b9ae3bb453ac" />
+
+<img width="518" height="291" alt="image" src="https://github.com/user-attachments/assets/cc47cdeb-fcc9-45b4-a6f0-f06c544d28ae" />
+
+<img width="422" height="282" alt="image" src="https://github.com/user-attachments/assets/04329e08-6dd4-4ae5-bf31-d9c01f4939b9" />
+
+<img width="487" height="297" alt="image" src="https://github.com/user-attachments/assets/156ae6f5-17b6-4cf2-aed9-e84a01ac66bf" />
+
+<img width="416" height="283" alt="image" src="https://github.com/user-attachments/assets/5b946ebd-38cc-4322-93f8-331a5a59cbe7" />
+
+<img width="279" height="258" alt="image" src="https://github.com/user-attachments/assets/983966f7-e3ab-42a0-a357-85da50717d39" />
+
+<img width="1375" height="775" alt="image" src="https://github.com/user-attachments/assets/d88710a8-5a08-4540-84e1-efe8efe0bb20" />
+
 ## 🧠 Knowledge Gained From This Project
 
 * Learned how to create a database in **SQL Server using CSV files**.
