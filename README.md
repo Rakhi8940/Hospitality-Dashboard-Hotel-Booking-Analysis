@@ -2,144 +2,175 @@
   <img src="https://github.com/user-attachments/assets/bb3d8e3c-4e34-4690-a53a-bf148d650cf0" alt="Project overview" style="max-width:100%; width:900px; height:auto;" />
 </p>
 
-# Hospitality Dashboard — Hotel Booking Analysis
+# 🏨 Hospitality Dashboard - Hotel Booking Data Analysis
 
-A data analytics project that transforms three years of hotel booking records into actionable business intelligence using **SQL Server** and **Power BI**. The analysis covers revenue trends, occupancy, Average Daily Rate (ADR), cancellations, and market segment performance.
+Hospitality Dashboard is a data analytics and visualization project focused on analyzing hotel booking data using **SQL Server and Power BI**. The project explores hotel revenue, booking trends, and key performance indicators to provide meaningful insights and support data-driven decision-making for stakeholders.
 
----
+## 🎯 Objective
 
-## Business Problem
+* Analyze hotel booking data to uncover trends and patterns.
+* Determine whether hotel revenue is growing year over year.
+* Identify important trends and changes in hotel performance.
+* Perform exploratory data analysis using SQL.
+* Build an interactive Power BI dashboard to visualize key metrics.
+* Provide actionable insights to stakeholders based on the analysis.
 
-Hotel management needs to know whether revenue is growing year over year and which factors — hotel type, market segment, seasonality, and cancellations — are driving or limiting that growth. Decisions on pricing strategy, parking capacity, and marketing channel investment all depend on a reliable, structured view of the data.
+## 📊 Key Business Questions
 
----
+* Is our hotel revenue growing by year?
+* What trends can we identify from the hotel booking data?
 
-## Objective
+## 🛠️ Technologies Used
 
-- Determine whether hotel revenue is growing year over year.
-- Break down revenue by hotel type, market segment, and season.
-- Measure the financial impact of cancellations on realised revenue.
-- Track Average Daily Rate (ADR) trends over time.
-- Assess parking lot utilisation to inform infrastructure decisions.
-- Deliver an interactive Power BI dashboard for stakeholder use.
+* **SQL Server** – Database creation, data preparation, and exploratory data analysis
+* **SQL** – Data querying and analysis
+* **Power BI** – Interactive dashboard development and visualization
+* **DAX** – Calculated columns and measures
+* **CSV** – Source data format
 
----
+## 🧑‍💻 Project Workflow
 
-## Dataset
+### 1. 🗄️ Build a Database
 
-| File | Description |
-|------|-------------|
-| `hotel_revenue_historical_Dataset.xlsx` | Three year-level sheets (2018, 2019, 2020) of hotel booking records |
-| Sheet: `market_segment$` | Market segment discount lookup table |
-| Sheet: `meal_cost$` | Meal type cost-per-night lookup table |
+* Created a database in SQL Server using CSV files.
+* Imported the required hotel booking datasets into the database.
 
-**Key columns:** `hotel`, `is_canceled`, `arrival_date_year`, `arrival_date_month`, `stays_in_weekend_nights`, `stays_in_week_nights`, `adr`, `market_segment`, `meal`, `required_car_parking_spaces`, `country`, `customer_type`
+### 2. 🔗 Develop SQL Queries
 
-> Source: Publicly available hotel revenue historical dataset (Excel/XLSX format).
+* Developed SQL queries to join multiple tables.
+* Combined relevant data to create a unified dataset for analysis.
 
----
+### 3. 🔍 Exploratory Data Analysis
 
-## Tools
+* Performed exploratory data analysis using SQL.
+* Analyzed the data to identify trends, patterns, and important business metrics.
 
-| Tool | Purpose |
-|------|---------|
-| SQL Server (SSMS) | Data consolidation, enrichment, and exploratory analysis |
-| Power BI Desktop | Interactive dashboard and KPI visualisation |
-| DAX | Calculated measures inside Power BI |
-| Excel (XLSX) | Source data format |
+### 4. 🔌 Connect Power BI to Database
 
----
+* Connected the SQL Server database with Power BI.
+* Imported the required data for visualization and dashboard development.
 
-## Data Cleaning and Preparation
+### 5. 📊 Create Dashboard
 
-All cleaning and preparation is handled in SQL before the data reaches Power BI.
+* Developed an interactive Power BI dashboard.
+* Added key metrics and different types of charts to communicate insights effectively.
+* Used icons and visual elements to enhance the dashboard experience.
 
-- **Consolidate three years** using `UNION ALL` — not plain `UNION` — to preserve all booking records including any identical rows across years.
-- **Handle NULL discounts and meal costs** with `COALESCE(..., 0)` on both lookup joins so NULL values do not propagate through revenue calculations.
-- **Exclude cancelled bookings from revenue** with a `CASE WHEN is_canceled = 1 THEN 0` guard so only realised revenue is counted.
-- **Derive key calculated columns:** `total_nights`, `total_guests`, `revenue`, `net_revenue`.
+### 6. 📝 Summarize Findings
 
-**Revenue formula:**
+* Analyzed the dashboard results.
+* Identified important trends and patterns in hotel booking and revenue data.
+* Summarized the findings to help stakeholders understand business performance.
+
+## 📈 Key Analysis & Insights
+
+### 📌 Revenue Analysis
+
+* Analyzed hotel revenue across different years.
+* Evaluated year-over-year revenue growth to understand overall business performance.
+
+### 📌 Trend Analysis
+
+* Identified trends and patterns within the hotel booking data.
+* Used visualizations and key metrics to make changes in performance easier to understand.
+
+### 📌 Key Metrics
+
+* Created calculated columns and DAX measures to support the analysis.
+* Used key performance indicators to present important business information in a concise format.
+
+### 📌 Data Visualization
+
+* Used different charts to highlight trends and patterns.
+* Combined charts with key metrics to provide both detailed insights and high-level performance indicators.
+
+## 📊 Dashboard
+
+The Power BI dashboard provides an interactive view of hotel booking data and helps stakeholders understand revenue performance and trends.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/af9c196e-551c-42d8-b300-b9ae3bb453ac" alt="Dashboard - overview" style="max-width:100%; width:800px; height:auto;" />
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/cc47cdeb-fcc9-45b4-a6f0-f06c544d28ae" alt="Dashboard chart 1" style="max-width:100%; width:48%; height:auto; margin: 5px;" />
+  <img src="https://github.com/user-attachments/assets/156ae6f5-17b6-4cf2-aed9-e84a01ac66bf" alt="Dashboard chart 3" style="max-width:100%; width:48%; height:auto; margin: 5px;" />
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/04329e08-6dd4-4ae5-bf31-d9c01f4939b9" alt="Dashboard chart 2" style="max-width:100%; width:48%; height:auto; margin: 5px;" />
+  <img src="https://github.com/user-attachments/assets/5b946ebd-38cc-4322-93f8-331a5a59cbe7" alt="Dashboard chart 4" style="max-width:100%; width:48%; height:auto; margin: 5px;" />
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/983966f7-e3ab-42a0-a357-85da50717d39" alt="Dashboard KPI" style="max-width:100%; width:280px; height:auto; margin: 5px;" />
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/d88710a8-5a08-4540-84e1-efe8efe0bb20" alt="Full dashboard" style="max-width:100%; width:900px; height:auto;" />
+</p>
+
+## 🧠 Knowledge Gained From This Project
+
+* Learned how to create a database in **SQL Server using CSV files**.
+* Learned how to perform **exploratory data analysis using SQL queries**.
+* Learned how to join multiple tables using SQL.
+* Learned how to connect a **SQL Server database with Power BI**.
+* Learned how to create **calculated columns and DAX measures** in Power BI.
+* Learned how to use icons to enhance dashboard visuals.
+* Gained experience working with different charts and visualizations.
+* Learned how to combine **key metrics with visual trends** to communicate insights effectively.
+* Improved understanding of using data analytics tools to support business decision-making.
+
+## 🔌 Example Use Cases
+
+* Monitoring hotel revenue growth over time
+* Identifying important booking trends
+* Understanding changes in hotel performance
+* Supporting data-driven business decisions
+* Presenting hotel performance through interactive dashboards
+
+## 📁 Project Structure
+
+```text
+Hospitality-Dashboard/
+├── data/
+│   ├── hotel_booking.csv
+│   └── ...
+├── sql/
+│   ├── database_creation.sql
+│   ├── data_analysis.sql
+│   └── ...
+├── powerbi/
+│   ├── hospitality_dashboard.pbix
+│   └── ...
+├── visuals/
+│   └── dashboard.png
+├── README.md
+└── ...
 ```
-revenue = (stays_in_weekend_nights + stays_in_week_nights) x ADR x (1 - Discount)
-net_revenue = revenue - (total_nights x meal_cost_per_night)
-```
 
----
+## 📝 Getting Started
 
-## Analysis and KPIs
+1. Import the hotel booking CSV files into **SQL Server**.
+2. Create the required database and tables.
+3. Execute SQL queries for data preparation and exploratory analysis.
+4. Connect the SQL Server database to **Power BI**.
+5. Create calculated columns and DAX measures.
+6. Build and customize the interactive dashboard.
+7. Analyze the visualizations and summarize the key findings.
 
-| # | Business Question | Approach |
-|---|-------------------|----------|
-| Q1 | Is revenue growing year over year? | Annual revenue aggregation + `LAG()` window function for YoY growth % |
-| Q2 | Which hotel type generates more revenue? | Revenue grouped by hotel and year |
-| Q3 | How is ADR trending? | Average ADR and total nights by hotel and year |
-| Q4 | What is the cancellation rate? | Cancellations as % of total bookings by hotel and year |
-| Q5 | Which market segments perform best? | Revenue, ADR, and cancellation rate by segment |
-| Q6 | Is parking capacity being utilised? | Parking spaces required as % of total nights stayed |
-| Q7 | What does seasonality look like? | Monthly booking volume and revenue by hotel |
+## 🧠 Future Improvements
 
----
+* Add more hotel performance KPIs.
+* Include advanced revenue and booking analysis.
+* Add forecasting to predict future hotel revenue.
+* Build more interactive Power BI pages for deeper analysis.
+* Incorporate additional datasets for richer business insights.
+* Add automated data refresh for regularly updated dashboards.
 
-## Key Insights
+## 👩‍💻 Author
 
-> *These insights are derived from the SQL analysis of 2018–2020 booking data.*
+Made with ❤️ by **Rakhi Yadav**
 
-- **Revenue growth:** Revenue grew from 2018 to 2019. The 2020 figures are partial (data covers only part of the year) and should not be used to draw a full-year trend conclusion.
-- **Hotel type:** Resort Hotels generate a higher ADR than City Hotels. City Hotels drive higher booking volume across all years.
-- **Cancellations:** City Hotels show a consistently higher cancellation rate than Resort Hotels, which directly reduces their realised revenue despite higher total bookings.
-- **Market segments:** Online Travel Agencies (OTA) generate the highest booking volume but also the highest cancellation rates. Direct and Corporate segments deliver higher booking quality with lower cancellation rates.
-- **Parking utilisation:** Required parking spaces represent a small fraction of total nights stayed, indicating the current parking capacity is adequate and does not need expansion.
-- **Seasonality:** Resort Hotels peak in July and August. City Hotels show a more even distribution across the year, reflecting business travel demand.
-
----
-
-## Recommendations
-
-1. **Tighten deposit requirements for OTA bookings** to reduce the high cancellation rate from that channel and protect realised revenue.
-2. **Apply dynamic pricing at Resort Hotels in peak summer months** (July–August) to maximise ADR when demand is highest.
-3. **Invest in growing Direct and Corporate channels** — these segments deliver better booking quality with lower cancellation exposure.
-4. **Do not expand parking infrastructure** based on current utilisation data; the cost is not justified by demand.
-5. **Treat 2020 as a partial-year anomaly** in any long-term trend analysis given incomplete data coverage.
-
----
-
-## Project Structure
-
-```
-Hospitality-Dashboard-Hotel-Booking-Analysis/
-├── Hotel_Booking_Analysis.sql              <- All SQL queries (consolidation + 7 analysis queries)
-├── Hotels_Booking_Analysis_Dashboard.pbix  <- Power BI interactive dashboard
-├── hotel_revenue_historical_Dataset.xlsx   <- Source data (2018, 2019, 2020 + lookup tables)
-└── README.md
-```
-
----
-
-## How to Run
-
-### SQL
-
-1. Open **SQL Server Management Studio (SSMS)**.
-2. Import the Excel sheets as separate tables in your database:
-   - `2018$`, `2019$`, `2020$` — booking data
-   - `market_segment$` — discount lookup
-   - `meal_cost$` — meal cost lookup
-3. Open `Hotel_Booking_Analysis.sql`.
-4. Run the **STEP 1 / STEP 2 / FINAL QUERY** block to generate the full enriched dataset used by Power BI.
-5. Run individual **Q1–Q7 blocks** separately to explore specific business questions.
-
-### Power BI
-
-1. Open `Hotels_Booking_Analysis_Dashboard.pbix` in **Power BI Desktop**.
-2. Go to **Transform Data > Data Source Settings** and update the SQL Server connection to your local instance.
-3. Click **Refresh** to load data from the updated SQL query.
-4. Use the dashboard slicers to filter by year, hotel type, and market segment.
-
----
-
-## Author
-
-Made with love by **Rakhi Yadav**
-
-*Turning hotel booking data into meaningful business insights.*
+### Turning hotel booking data into meaningful business insights 🏨📊✨
